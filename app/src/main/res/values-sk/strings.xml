@@ -296,10 +296,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Na odomknutie aplikácie používať odtlačok prsta</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">Váš odtlačok prsta môže odomknúť %1$s ak je URL v aplikácii už otvorené. Bude zapnutý režim nenápadnosti.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Odomknite pomocou odtlačku prsta, ak ste pridali Skratky alebo keď je už webová lokalita otvorená v %s.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -364,7 +366,7 @@
 
     <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
      a user first launches the app. -->
-    <string name="preference_homescreen_tips">Zobraziť tipy na domovskej obrazovke</string>
+    <string moz:removedIn="105" name="preference_homescreen_tips" tools:ignore="UnusedResources">Zobraziť tipy na domovskej obrazovke</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Pridať vyhľadávací modul</string>
@@ -459,7 +461,7 @@
     <string name="external_multiple_apps_matched_exit">Ukončiť režim Súkromné prehliadanie?</string>
 
     <!-- Snackbar that will be displayed after a download has completed. %1$s will be replaced with the file name. -->
-    <string name="download_snackbar_finished">Preberanie súboru %1$s sa dokončilo</string>
+    <string name="download_snackbar_finished">Hotovo pre %1$s</string>
 
     <!-- Snackbar action to immediately open the successfully downloaded file. -->
     <string name="download_snackbar_open">Otvoriť</string>
@@ -510,7 +512,7 @@
     <string name="onboarding_history_title">Prehliadajte bez stôp</string>
 
     <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Jedným ťuknutím vymažete históriu prehliadania a súbory cookie – a zastavíte sledovanie pre reklamné účely všade kam sa pohnete.</string>
+    <string name="onboarding_history_description2">Jedným ťuknutím vymažete históriu prehliadania a súbory cookie – a zastavíte sledovanie pre reklamné účely všade kam sa pohnete.</string>
 
     <!-- Onboarding: Protection Title -->
     <string name="onboarding_protection_title">Súkromie, ktoré sa hodí do každej situácie</string>
@@ -677,6 +679,48 @@
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Automatické prehrávanie</string>
 
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Postup pre povolenie:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Prejdite do nastavení Androidu</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Ťuknite na <b>Povolenia</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Prejsť do nastavení</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Prepnite prepínač <b>%1$s</b> do polohy ZAPNUTÉ]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Kamera</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Mikrofón</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Poloha</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Upozornenia</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Obsah chránený pomocou DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Vždy sa opýtať</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Blokované</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Povolené</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Blokované systémom Android</string>
+
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Povoliť zvuk a video</string>
 
@@ -715,14 +759,23 @@
 
     <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
      %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Odomknite %1$s</string>
+    <string moz:removedIn="103" name="biometric_auth_title">Odomknite %1$s</string>
+
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Odomknúť</string>
+
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Potvrďte pomocou odtlačku prsta</string>
+
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Na pokračovanie aktuálnej relácie aplikácie môžete použiť odtlačok prsta.</string>
 
     <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Pre pokračovanie sa dotknite snímača odtlačkov prstov.</string>
+    <string moz:removedIn="103" name="biometric_auth_description">Pre pokračovanie sa dotknite snímača odtlačkov prstov.</string>
 
     <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
      When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Nová relácia</string>
+    <string moz:removedIn="103" name="biometric_auth_new_session">Nová relácia</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -766,7 +819,7 @@
 
     <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
 The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Chýba na webe obsah alebo sa správa divne?\n
+    <string moz:removedIn="105" name="tip_disable_tracking_protection3" tools:ignore="UnusedResources">Chýba na webe obsah alebo sa správa divne?\n
     Skúste vypnúť Rozšírenú ochranu pred sledovaním</string>
 
     <!-- Tip displayed on home view explaining how to add sites to homescreen
@@ -788,7 +841,7 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Tip displayed on home view explaining how to request the desktop version of a website.
       %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Chcete vidieť plnú verziu stránky?\n
+    <string moz:removedIn="105" name="tip_request_desktop2" tools:ignore="UnusedResources">Chcete vidieť plnú verziu stránky?\n
         Prepnite na verziu pre počítače z ponuky %1$s</string>
 
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
@@ -796,17 +849,17 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
      "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Chcete na stránkach, ktorým dôverujete, vypnúť Rozšírenú ochranu pred sledovaním?\n
+    <string moz:removedIn="105" name="tip_explain_allowlist3" tools:ignore="UnusedResources">Chcete na stránkach, ktorým dôverujete, vypnúť Rozšírenú ochranu pred sledovaním?\n
         Pridajte ju do zoznamu povolených v Nastaveniach
     </string>
 
     <!-- Tip displayed on the home view about the changes in the new release.
     %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Áno, máme úplne nový vzhľad!\n Prečítajte si viac o tejto a ďalších novinkách aplikácie %1$s.</string>
+    <string moz:removedIn="105" name="tip_fresh_look" tools:ignore="UnusedResources">Áno, máme úplne nový vzhľad!\n Prečítajte si viac o tejto a ďalších novinkách aplikácie %1$s.</string>
 
     <!-- Tip displayed on the home view about shortcuts
     %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Vytvorte si skratky k stránkam, ktoré navštevujete najčastejšie:\n
+    <string moz:removedIn="105" name="tip_about_shortcuts" tools:ignore="UnusedResources">Vytvorte si skratky k stránkam, ktoré navštevujete najčastejšie:\n
     V ponuke %1$s vyberte položku Pridať medzi Skratky</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
@@ -818,8 +871,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Prepnúť na odkaz na novej karte okamžite</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Služba Safe Browsing</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Blokovať potenciálne nebezpečné a podvodné stránky</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -829,8 +880,6 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="preference_https_only_title">Režim &quot;Len HTTPS&quot;</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Automaticky sa pokúša pripojiť k stránkam pomocou protokolu HTTPS na zvýšenie bezpečnosti. Pripojenia HTTPS poskytujú zabezpečené, šifrované pripojenie k webovým stránkam, ktoré navštívite.</string>
-
     <string name="preference_https_only_summary3">Automaticky sa pokúša pripojiť k stránkam pomocou šifrovacieho protokolu HTTPS na zvýšenie bezpečnosti.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -945,6 +994,7 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="tool_tip_dismiss_button_content_description">Zavrieť</string>
 
     <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Zbavte sa svojich osobných údajov, histórie prehliadania a ďalších vecí z tejto relácie ťuknutím na tlačidlo koša. Skúste to!</string>
+    <string moz:removedIn="105" name="cfr_for_toolbar_delete_icon" tools:ignore="UnusedResources">Zbavte sa svojich osobných údajov, histórie prehliadania a ďalších vecí z tejto relácie ťuknutím na tlačidlo koša. Skúste to!</string>
+    <string name="cfr_for_toolbar_delete_icon2">Ťuknutím sem všetko vyhodíte do koša – históriu, súbory cookie, všetko – a začnete odznova na novej karte.</string>
 
 </resources>
