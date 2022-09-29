@@ -296,8 +296,11 @@
     <string name="preference_security_biometric">잠금 헤제에 지문을 사용</string>
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">앱에 URL이 이미 열려 있다면 지문으로 %1$s를 잠금 해제 할 수 있습니다. 스텔스가 켜집니다.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string moz:removedIn="102" name="preference_security_biometric_summary" tools:ignore="UnusedResources">앱에 URL이 이미 열려 있다면 지문으로 %1$s를 잠금 해제 할 수 있습니다. 스텔스가 켜집니다.</string>
+
+    <string name="preference_security_biometric_summary2">바로가기를 추가했거나 웹사이트가 이미 %s에서 열려 있는 경우 지문을 사용하여 잠금을 해제합니다.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -489,7 +492,36 @@
 
 
 
-  <!-- First run tour (Default browser): Title -->
+  <!-- Onboarding: Title -->
+    <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
+    <string name="onboarding_title">%1$s에 오신 것을 환영합니다!</string>
+
+    <!-- Onboarding: Description -->
+    <string name="onboarding_description">나의 차세대 개인 정보 보호 브라우징</string>
+
+    <!-- Onboarding: Incognito Title -->
+    <string name="onboarding_incognito_title">시크릿 브라우징이 보이지도 않을 때</string>
+
+    <!-- Onboarding: Incognito Description -->
+    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
+    <string name="onboarding_incognito_description">%s는 아주 강력한 추적 방지 기능과 쿠키 보호를 내장한 개인정보 보호를 최우선으로 하는 브라우저입니다.</string>
+
+    <!-- Onboarding: History Title -->
+    <string name="onboarding_history_title">이런 브라우징은 지금까지 없었다</string>
+
+    <!-- Onboarding: History Description -->
+    <string name="onboarding_history_description2">탭 한 번으로 검색 기록과 쿠키가 지워지고 광고가 사용자를 따라다니는 것을 방지합니다.</string>
+
+    <!-- Onboarding: Protection Title -->
+    <string name="onboarding_protection_title">모든 상황에 맞는 프라이버시</string>
+
+    <!-- Onboarding: Protection Description -->
+    <string name="onboarding_protection_description">브라우징이 변경되어야 할 떄 개인 정보 설정을 쉽게 확장하거나 축소할 수 있습니다.</string>
+
+    <!-- Onboarding: Start browsing -->
+    <string name="onboarding_start_browsing">탐색 시작</string>
+
+    <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">개인정보 보호 강화하기</string>
     <!-- First run tour (Default browser): Text. -->
     <string name="firstrun_defaultbrowser_text2">한 단계 높은 개인 정보 보호 브라우징을 즐겨보세요. 사이트의 경계를 넘어 개인정보를 추적하거나, 페이지 로딩 속도를 늦추는 원인이 되는 광고 및 기타 콘텐츠를 자동으로 차단해 줍니다.</string>
@@ -643,6 +675,48 @@
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">자동 재생</string>
 
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">허용하려면:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Android 설정으로 이동</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. <b>권한</b>을 탭]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">설정으로 이동</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. <b>%1$s</b>를 켜기로 전환]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">카메라</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">마이크</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">위치</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">알림</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">DRM 제어 콘텐츠</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">허용 요청</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">차단됨</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">허용됨</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Android에 의해 차단됨</string>
+
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">오디오 및 비디오 허용</string>
 
@@ -681,14 +755,23 @@
 
     <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
      %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">%1$s 잠금 해제</string>
+    <string moz:removedIn="103" name="biometric_auth_title">%1$s 잠금 해제</string>
+
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">잠금 해제</string>
+
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">지문을 사용하여 확인</string>
+
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">지문을 사용하여 현재 앱 세션을 계속할 수 있습니다.</string>
 
     <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">지문 센서를 터치해주세요.</string>
+    <string moz:removedIn="103" name="biometric_auth_description">지문 센서를 터치해주세요.</string>
 
     <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
      When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">새 세션</string>
+    <string moz:removedIn="103" name="biometric_auth_new_session">새 세션</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -784,8 +867,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">새탭의 링크로 즉시 전환</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">안전한 브라우징</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">잠재적으로 위험한 사이트 및 사기성 사이트 차단</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -795,8 +876,6 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="preference_https_only_title">HTTPS 전용 모드</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">보안 강화를 위해 HTTPS 를 사용하여 사이트에 자동 연결을 시도합니다. HTTPS 연결은 방문하시는 웹사이트에 대해 안전하고 암호화된 연결을 제공합니다.</string>
-
     <string name="preference_https_only_summary3">보안 강화를 위해 HTTPS 암호화 프로토콜을 사용하여 사이트에 자동으로 연결을 시도합니다.</string>
 
     <!-- Preference for exceptions tracking protection -->
