@@ -116,7 +116,7 @@
          instead of the short title when it has enough space. Android recommends a maximum length
          of 25 characters.
          %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="shortcut_erase_and_open_long_label">Стереть и открыть %1$s</string>
+    <string name="shortcut_erase_and_open_long_label">Удалить и открыть %1$s</string>
 
 
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
@@ -296,10 +296,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Использовать отпечатки пальцев для разблокировки приложения</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">Ваш отпечаток сможет разблокировать %1$s, если ссылка уже открыта в приложении. Режим «Невидимка» будет включён.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Разблокировать с помощью отпечатка пальца, если вы добавили ярлыки или когда веб-сайт уже открыт в %s.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -349,7 +351,7 @@
     <string name="preference_choose_search_engine">Выберите поисковую систему</string>
 
     <!-- Action for restoring the default list of search engines -->
-    <string name="preference_search_restore">Восстановить набор поисковых систем по умолчанию</string>
+    <string name="preference_search_restore">Восстановить поисковые системы по умолчанию</string>
 
     <!-- Action for adding an additional search engine to the list.
     The "+" is used to emphasize that this is an "add" action -->
@@ -364,7 +366,7 @@
 
     <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
      a user first launches the app. -->
-    <string name="preference_homescreen_tips">Показывать советы на домашнем экране</string>
+    <string moz:removedIn="105" name="preference_homescreen_tips" tools:ignore="UnusedResources">Показывать советы на домашнем экране</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Добавить поисковую систему</string>
@@ -494,10 +496,52 @@
 
   <!-- Onboarding: Title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Добро пожаловать в %1$s!</string>
+    <string moz:removedIn="106" name="onboarding_title">Добро пожаловать в %1$s!</string>
+
+    <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Закрыть</string>
+
+    <!-- New Onboarding flow first screen title -->
+    <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
+    <string name="onboarding_first_screen_title">Добро пожаловать в %1$s</string>
+
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Быстро. Приватный. Никаких отвлечений.</string>
+
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Начать</string>
+
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Установить браузером по умолчанию</string>
+
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Пропустить</string>
+
+
+    <!-- Onboarding: Description -->
+    <string moz:removedIn="106" name="onboarding_description">Приватный просмотр высшего уровня в любое время</string>
+
+    <!-- Onboarding: Incognito Title -->
+    <string moz:removedIn="106" name="onboarding_incognito_title">Где встречаются режимы инкогнито и невидимости</string>
+
+    <!-- Onboarding: Incognito Description -->
+    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
+    <string moz:removedIn="106" name="onboarding_incognito_description">%s — это браузер, ставящий на первое место приватность с надежной встроенной защитой от отслеживания и кук.</string>
+
+    <!-- Onboarding: History Title -->
+    <string moz:removedIn="106" name="onboarding_history_title">Веб-сёрфинг без оставления следов</string>
+
+    <!-- Onboarding: History Description -->
+    <string moz:removedIn="106" name="onboarding_history_description2">Одно касание стирает вашу историю просмотров и куки и не даёт рекламе следовать за вами по пятам.</string>
+
+    <!-- Onboarding: Protection Title -->
+    <string moz:removedIn="106" name="onboarding_protection_title">Приватность в любой ситуации</string>
+
+    <!-- Onboarding: Protection Description -->
+    <string moz:removedIn="106" name="onboarding_protection_description">Если нужно сменить режим веб-сёрфинга, вы можете легко усилить или ослабить настройки приватности.</string>
 
     <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Начните веб-сёрфинг</string>
+    <string moz:removedIn="106" name="onboarding_start_browsing">Начните веб-сёрфинг</string>
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Усильте свою приватность</string>
@@ -655,6 +699,48 @@
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Автовоспроизведение</string>
 
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Чтобы разрешить это:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Перейдите в настройки Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Нажмите на <b>Разрешения</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Перейти в Настройки</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Переключите <b>%1$s</b> в состояние РАЗРЕШЕНО]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Камера</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Микрофон</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Местоположение</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Уведомления</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Защищённое DRM содержимое</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Всегда спрашивать</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Блокировать</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Разрешить</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Заблокировано Android</string>
+
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Разрешить аудио и видео</string>
 
@@ -693,14 +779,23 @@
 
     <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
      %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Разблокировать %1$s</string>
+    <string moz:removedIn="103" name="biometric_auth_title">Разблокировать %1$s</string>
+
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Разблокировать</string>
+
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Подтвердите с помощью отпечатка пальца</string>
+
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Вы можете использовать свой отпечаток пальца, чтобы продолжить текущий сеанс работы с приложением.</string>
 
     <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Дотроньтесь до датчика отпечатков пальцев для продолжения.</string>
+    <string moz:removedIn="103" name="biometric_auth_description">Дотроньтесь до датчика отпечатков пальцев для продолжения.</string>
 
     <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
      When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Новый сеанс</string>
+    <string moz:removedIn="103" name="biometric_auth_new_session">Новый сеанс</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -744,7 +839,7 @@
 
     <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
 The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">На сайте отсутствует cодержимое или он ведет себя странно?\n
+    <string moz:removedIn="105" name="tip_disable_tracking_protection3" tools:ignore="UnusedResources">На сайте отсутствует cодержимое или он ведет себя странно?\n
   Попробуйте отключить Улучшенную защиту от отслеживания</string>
 
     <!-- Tip displayed on home view explaining how to add sites to homescreen
@@ -766,7 +861,7 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Tip displayed on home view explaining how to request the desktop version of a website.
       %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Хотите увидеть полную версию сайта?\n
+    <string moz:removedIn="105" name="tip_request_desktop2" tools:ignore="UnusedResources">Хотите увидеть полную версию сайта?\n
         Переключитесь на версию для компьютера в меню %1$s</string>
 
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
@@ -774,17 +869,17 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
      "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Хотите отключить Улучшенную защиту от отслеживания для сайта, которому доверяете?\n
+    <string moz:removedIn="105" name="tip_explain_allowlist3" tools:ignore="UnusedResources">Хотите отключить Улучшенную защиту от отслеживания для сайта, которому доверяете?\n
         Добавьте его в список разрешённых в Настройках
     </string>
 
     <!-- Tip displayed on the home view about the changes in the new release.
     %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Почему бы и нет, у нас действительно новый внешний вид!\n Узнайте больше об этом и других обновлениях %1$s.</string>
+    <string moz:removedIn="105" name="tip_fresh_look" tools:ignore="UnusedResources">Почему бы и нет, у нас действительно новый внешний вид!\n Узнайте больше об этом и других обновлениях %1$s.</string>
 
     <!-- Tip displayed on the home view about shortcuts
     %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Создайте ярлыки на сайты, которые наиболее часто посещаете:\n
+    <string moz:removedIn="105" name="tip_about_shortcuts" tools:ignore="UnusedResources">Создайте ярлыки на сайты, которые наиболее часто посещаете:\n
     Выберите Добавить в ярлыки в меню %1$s</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
@@ -796,8 +891,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Сразу переходить на новую вкладку</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Безопасный веб-сёрфинг</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Блокировать потенциально опасные и обманывающие сайты</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -807,8 +900,6 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="preference_https_only_title">Режим «Только HTTPS»</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Автоматически пытаться соединяться с сайтами с использованием HTTPS для повышения безопасности. HTTPS-соединения обеспечивают защищённый, зашифрованный обмен данными с посещаемыми вами веб-сайтами.</string>
-
     <string name="preference_https_only_summary3">Автоматически пытаться подключиться к сайтам через протокол шифрования HTTPS для повышения безопасности.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -908,13 +999,44 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Content description (not visible, for screen readers etc.): Button that closes a tab n the sessions list -->
     <string name="close_tab">Закрыть вкладку</string>
 
+    <!-- Contextual Feature Recommendation Popups -->
+    <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
+    <string moz:removedIn="104" name="cfr_for_toolbar_shield_icon">Похоже, этот сайт пытался за вами следить. Нажмите на щит, чтобы открыть настройки сайта и статистику блокировки трекеров.</string>
+    <string name="cfr_for_toolbar_shield_icon2">Попались! Мы остановили слежку этого сайта за вами. Коснитесь щита всякий раз, чтобы узнать, что мы блокируем.</string>
+
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Закрыть всплывающее окно</string>
 
     <!-- Tool Tip for: Privacy and Security Settings Screen  task : https://github.com/mozilla-mobile/focus-android/issues/6211 -->
     <!-- Tool Tip Title -->
     <string name="tool_tip_title">Вы защищены!</string>
+    <!-- Tool Tip Message -->
+    <string name="tool_tip_message">Эти настройки по умолчанию обеспечивают надежную защиту. Но вы можете легко изменить их под ваши конкретные потребности.</string>
     <!-- Tool Tip "X" button Content description (not visible, for screen readers etc.) :Button that closes the tool tip -->
     <string name="tool_tip_dismiss_button_content_description">Убрать</string>
 
-    </resources>
+    <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
+    <string moz:removedIn="105" name="cfr_for_toolbar_delete_icon" tools:ignore="UnusedResources">Избавьтесь от своих личных данных, истории посещения страниц и многого другого из этого сеанса, нажав на кнопку корзины. Попробуйте!</string>
+    <string name="cfr_for_toolbar_delete_icon2">Нажмите здесь, чтобы удалить всё — историю, куки, всё — и начать заново на новой вкладке.</string>
+
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for the
+    close button from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Закрыть</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Виджет поиска</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">История веб-сёрфинга удалена! 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_button_text">Добавить виджет на домашний экран</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Виджет добавлен на домашний экран</string>
+</resources>
