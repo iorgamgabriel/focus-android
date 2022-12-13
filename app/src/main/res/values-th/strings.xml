@@ -295,10 +295,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">ใช้ลายนิ้วมือเพื่อปลดล็อคแอป</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">ลายนิ้วมือของคุณสามารถปลดล็อค %1$s หาก URL ถูกเปิดอยู่แล้วในแอป การพรางตัวจะถูกเปิด</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">ปลดล็อกโดยใช้ลายนิ้วมือหากคุณได้เพิ่มทางลัดหรือเมื่อเว็บไซต์เปิดอยู่ใน %s แล้ว</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -361,10 +363,6 @@
 
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">เลือกเครื่องมือที่คุณต้องการ:</string>
-
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">แสดงเคล็ดลับหน้าจอหลัก</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">เพิ่มเครื่องมือค้นหา</string>
@@ -492,7 +490,67 @@
 
 
 
-  <!-- First run tour (Default browser): Title -->
+  <!-- Onboarding: Title -->
+    <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
+    <string moz:removedIn="106" name="onboarding_title">ยินดีต้อนรับสู่ %1$s!</string>
+
+    <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">ปิด</string>
+
+    <!-- New Onboarding flow first screen title -->
+    <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
+    <string name="onboarding_first_screen_title">ยินดีต้อนรับสู่ %1$s</string>
+
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">เร็ว ส่วนตัว ไม่มีการรบกวน</string>
+
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">เริ่มต้นใช้งาน</string>
+
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">%1$s ไม่เหมือนบราวเซอร์อื่นๆ</string>
+
+    <!-- New Onboarding flow second screen subtitle the one that appears under title -->
+    <string name="onboarding_second_screen_subtitle_one">เราล้างประวัติของคุณเมื่อคุณปิดแอพเพื่อความเป็นส่วนตัวกว่าปกติ</string>
+
+    <!-- New Onboarding flow second screen subtitle two the one that appears under subtitle one -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_subtitle_two">ทำให้ %1$s เป็นค่าเริ่มต้นของคุณเพื่อปกป้องข้อมูลของคุณด้วยทุกลิงก์ที่คุณเปิด</string>
+
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">ตั้งเป็นเบราว์เซอร์เริ่มต้น</string>
+
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">ข้าม</string>
+
+
+    <!-- Onboarding: Description -->
+    <string moz:removedIn="106" name="onboarding_description">การเรียกดูแบบส่วนตัวที่เหนือไปอีกขั้นตามที่คุณต้องการ</string>
+
+    <!-- Onboarding: Incognito Title -->
+    <string moz:removedIn="106" name="onboarding_incognito_title">ปกปิดตัวตนของคุณไม่ให้คนอื่นเห็น</string>
+
+    <!-- Onboarding: Incognito Description -->
+    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
+    <string moz:removedIn="106" name="onboarding_incognito_description">%s เป็นเบราว์เซอร์ที่เน้นเรื่องความเป็นส่วนตัวซึ่งมาพร้อมการป้องกันการติดตามและคุกกี้ที่แข็งแกร่งในตัว</string>
+
+    <!-- Onboarding: History Title -->
+    <string moz:removedIn="106" name="onboarding_history_title">ท่องเว็บเหมือนมันไม่เคยเกิดขึ้น</string>
+
+    <!-- Onboarding: History Description -->
+    <string moz:removedIn="106" name="onboarding_history_description2">เพียงแตะครั้งเดียวก็สามารถลบประวัติการเรียกดูและคุกกี้ รวมทั้งหยุดไม่ให้โฆษณาตามรอยคุณในทุกที่</string>
+
+    <!-- Onboarding: Protection Title -->
+    <string moz:removedIn="106" name="onboarding_protection_title">ปรับแต่งความเป็นส่วนตัวให้เข้ากับทุกสถานการณ์</string>
+
+    <!-- Onboarding: Protection Description -->
+    <string moz:removedIn="106" name="onboarding_protection_description">คุณสามารถปรับการตั้งค่าความเป็นส่วนตัวให้สูงขึ้นหรือต่ำลงได้เมื่อคุณจำเป็นต้องเปลี่ยนรูปแบบการเรียกดู</string>
+
+    <!-- Onboarding: Start browsing -->
+    <string moz:removedIn="106" name="onboarding_start_browsing">เริ่มการเรียกดู</string>
+
+    <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">เพิ่มความเป็นส่วนตัวของคุณ</string>
     <!-- First run tour (Default browser): Text. -->
     <string name="firstrun_defaultbrowser_text2">นำการท่องเว็บแบบส่วนตัวไปสู่ระดับถัดไป ปิดกั้นโฆษณาและเนื้อหาอื่น ๆ ที่สามารถติดตามคุณในไซต์ต่าง ๆ และลดเวลาในการโหลดหน้า</string>
@@ -648,6 +706,48 @@
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">เล่นอัตโนมัติ</string>
 
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">เมื่อต้องการอนุญาต:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. ไปที่การตั้งค่า Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. แตะ <b>สิทธิอนุญาต</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">ไปยังการตั้งค่า</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. สลับ <b>%1$s</b> เป็นเปิด]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">กล้อง</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">ไมโครโฟน</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">ตำแหน่งที่ตั้ง</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">การแจ้งเตือน</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">เนื้อหาที่ควบคุมด้วย DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">ขออนุญาตทุกครั้ง</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">ปิดกั้น</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">อนุญาต</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">ปิดกั้นโดย Android</string>
+
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">อนุญาตเสียงและวิดีโอ</string>
 
@@ -684,16 +784,14 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">การดีบั๊กระยะไกลผ่าน USB/Wi-Fi</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">ปลดล็อค %1$s</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">ปลดล็อก</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">สัมผัสเซนเซอร์ลายนิ้วมือเพื่อดำเนินการต่อ</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">ยืนยันการใช้ลายนิ้วมือของคุณ</string>
 
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">วาระใหม่</string>
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">คุณสามารถใช้ลายนิ้วมือเพื่อใช้งานแอปปัจจุบันต่อได้</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -735,11 +833,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">ไซต์ทำงานอย่างไม่คาดคิด?\n ลองปิดการป้องกันการติดตาม</string>
 
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">ไซต์ไม่มีเนื้อหาอะไรเลยหรือทำงานแปลก ๆ?\n
-    ลองปิดการป้องกันการติดตามที่มากขึ้น</string>
-
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
     <string name="tip_add_to_homescreen"><![CDATA[รับการเข้าถึงด้วยการแตะครั้งเดียวไปยังไซต์ที่คุณใช้มากที่สุด%1$s เมนู > เพิ่มไปยังหน้าจอหลัก]]></string>
@@ -757,28 +850,8 @@ The new line here must be kept as the second half of the string is clickable for
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_open_in_new_tab">เปิดลิงก์ในแท็บใหม่\n แตะค้างที่ลิงก์ใด ๆ ในหน้า</string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">ต้องการดูเว็บไซต์รุ่นเต็มหรือไม่?\n
-        เปิด ไซต์เดสก์ท็อป จากเมนู %1$s</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">ปิดเคล็ดลับในหน้าจอเริ่มต้น</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">ต้องการปิดการป้องกันการติดตามที่มากขึ้นสำหรับไซต์ที่คุณเชื่อถือหรือไม่?\n
-        เพิ่มลงในรายการอนุญาตในการตั้งค่า
-    </string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">ใช่ เรามีรูปลักษณ์โฉมใหม่แล้ว!\n อ่านเพิ่มเติมเกี่ยวกับสิ่งนี้และการอัปเดตอื่น ๆ ของ %1$s</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">สร้างทางลัดไปยังไซต์ที่คุณเข้าชมบ่อยที่สุด:\n
-    เลือก เพิ่มทางลัด จากเมนู %1$s</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">เปิดแท็บใหม่แล้ว</string>
@@ -789,8 +862,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">สลับไปยังลิงก์ในแท็บใหม่ทันที</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">การท่องเว็บแบบปลอดภัย</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">ปิดกั้นไซต์ที่อาจเป็นอันตรายและหลอกลวง</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -798,6 +869,9 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Title of the preference to enable "HTTPS-Only" mode -->
     <string name="preference_https_only_title">โหมด HTTPS-Only</string>
+
+    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
+    <string name="preference_https_only_summary3">พยายามเชื่อมต่อกับไซต์ต่าง ๆ โดยใช้โปรโตคอลการเข้ารหัส HTTPS โดยอัตโนมัติเพื่อเพิ่มความปลอดภัย</string>
 
     <!-- Preference for exceptions tracking protection -->
     <string name="preference_exceptions">ข้อยกเว้น</string>
@@ -888,9 +962,16 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on  -->
     <string name="errorpage_httpsonly_title">ไซต์ที่คุณร้องขอไม่รองรับ HTTPS</string>
 
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus") -->
+    <string name="errorpage_httpsonly_message">ตามค่าเริ่มต้น %1$s จะพยายามเชื่อมต่อโดยใช้ HTTPS เพื่อเพิ่มความปลอดภัย เมื่อต้องการเปลี่ยนการตั้งค่านี้หรือเรียนรู้เพิ่มเติม ให้ไปที่ การตั้งค่า &gt; ความเป็นส่วนตัวและความปลอดภัย &gt; ความปลอดภัย</string>
+
     <!-- Sessions List -->
     <!-- Content description (not visible, for screen readers etc.): Button that closes a tab n the sessions list -->
     <string name="close_tab">ปิดแท็บ</string>
+
+    <!-- Contextual Feature Recommendation Popups -->
+    <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
+    <string name="cfr_for_toolbar_shield_icon2">จับได้แล้ว! เราได้หยุดไซต์นี้ไม่ให้สอดแนมคุณแล้ว แตะโล่เพื่อดูข้อมูลเกี่ยวกับสิ่งที่เรากำลังปิดกั้น</string>
 
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">ปิดป๊อปอัป</string>
@@ -898,7 +979,36 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Tool Tip for: Privacy and Security Settings Screen  task : https://github.com/mozilla-mobile/focus-android/issues/6211 -->
     <!-- Tool Tip Title -->
     <string name="tool_tip_title">คุณได้รับการคุ้มครอง!</string>
+    <!-- Tool Tip Message -->
+    <string name="tool_tip_message">การตั้งค่าเริ่มต้นเหล่านี้ให้การปกป้องที่แข็งแกร่ง แต่คุณสามารถปรับแต่งการตั้งค่าให้ตรงกับความต้องการของคุณได้อย่างง่ายดาย</string>
     <!-- Tool Tip "X" button Content description (not visible, for screen readers etc.) :Button that closes the tool tip -->
     <string name="tool_tip_dismiss_button_content_description">ปิด</string>
 
-    </resources>
+    <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
+    <string name="cfr_for_toolbar_delete_icon2">แตะที่นี่เพื่อทิ้งทุกอย่าง — ประวัติ คุกกี้ ทุกอย่าง — และเริ่มต้นใหม่ในแท็บใหม่</string>
+
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for the
+    close button from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">ปิด</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">วิดเจ็ตการค้นหา</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">ล้างประวัติการท่องเว็บแล้ว! 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_dialog_subtitle">เราจะปล่อยให้คุณท่องเว็บแบบส่วนตัว แต่เริ่มต้นในครั้งต่อไปเร็วขึ้นด้วยวิดเจ็ต %1$s บนหน้าโฮมของคุณ</string>
+
+    !-- This is te text from add search widget to home screen button .The button is located on
+    promote search widget dialog. --&gt;
+    <string name="promote_search_widget_button_text">เพิ่มวิดเจ็ตไปที่หน้าจอหลัก</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">เพิ่มวิดเจ็ตในหน้าจอหลักแล้ว</string>
+</resources>
