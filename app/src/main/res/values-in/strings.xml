@@ -119,8 +119,21 @@
 
 
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
-         Clicking this action will launch Focus and perform a search in the default search engine. -->
-    <string name="text_selection_search_action">Mencari Secara Pribadi</string>
+         Focus is hard coded since we can't use variables in this context.
+         Do not translate or transliterate Focus.-->
+    <string name="text_selection_search_action_focus">Cari di Focus</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+             Klar is hard coded since we can't use variables in this context.
+             Do not translate or transliterate Klar.-->
+    <string name="text_selection_search_action_klar">Cari di Klar</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+            Focus Beta is hard coded since we can't use variables in this context.
+            Do not translate or transliterate Focus Beta.-->
+    <string name="text_selection_search_action_focus_beta">Cari di Focus Beta</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+          Focus Nightly is hard coded since we can't use variables in this context.
+          Do not translate or transliterate Focus Nightly.-->
+    <string name="text_selection_search_action_focus_nightly">Cari di Focus Nightly</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
@@ -295,10 +308,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Gunakan sidik jari untuk membuka aplikasi</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">Sidik jari Anda dapat membuka %1$s jika URL sudah dibuka di aplikasi. Mode siluman akan aktif.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Buka kunci dengan sidik jari jika Anda telah menambahkan Pintasan atau saat situs web sudah dibuka di %s.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -360,10 +375,6 @@
     <string name="preference_search_add3">Tambahkan mesin pencari lainnya</string>
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">Pilih mesin pilihan Anda:</string>
-
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">Tampilkan kiat beranda</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Tambah mesin pencari</string>
@@ -491,34 +502,36 @@
 
 
 
-  <!-- Onboarding: Title -->
+  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Tutup</string>
+
+    <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Selamat datang di %1$s!</string>
+    <string name="onboarding_first_screen_title">Selamat datang di %1$s</string>
 
-    <!-- Onboarding: Description -->
-    <string name="onboarding_description">Penjelajahan pribadi tingkat lanjut di saat Anda menginginkannya</string>
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Cepat. Pribadi. Tanpa gangguan.</string>
 
-    <!-- Onboarding: Incognito Title -->
-    <string name="onboarding_incognito_title">Menyamar sekaligus tak terlihat</string>
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Memulai</string>
 
-    <!-- Onboarding: Incognito Description -->
-    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
-    <string name="onboarding_incognito_description">%s adalah peramban utama dengan perlindungan pelacakan dan perlindungan kuki bawaan ekstra kuat.</string>
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">%1$s tidak seperti peramban lain</string>
 
-    <!-- Onboarding: History Title -->
-    <string name="onboarding_history_title">Menjelajah seperti ini tidak pernah terjadi</string>
+    <!-- New Onboarding flow second screen subtitle the one that appears under title -->
+    <string name="onboarding_second_screen_subtitle_one">Kami menghapus riwayat Anda saat menutup aplikasi untuk privasi tambahan.</string>
 
-    <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Satu ketukan menghapus riwayat penelusuran dan kuki Anda — dan menghentikan iklan mengikuti Anda.</string>
+    <!-- New Onboarding flow second screen subtitle two the one that appears under subtitle one -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_subtitle_two">Jadikan %1$s sebagai perlindungan baku data Anda dengan setiap tautan yang Anda buka.</string>
 
-    <!-- Onboarding: Protection Title -->
-    <string name="onboarding_protection_title">Privasi yang sesuai dengan situasi apapun</string>
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Setel sebagai peramban baku</string>
 
-    <!-- Onboarding: Protection Description -->
-    <string name="onboarding_protection_description">Jika penjelajahan Anda perlu diubah, mudah untuk menaikkan atau menurunkan pengaturan privasi Anda.</string>
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Lewati</string>
 
-    <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Mulai menjelajah</string>
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Perkuat privasi Anda</string>
@@ -673,8 +686,71 @@
     <!-- Preference for site permissions -->
     <string name="preference_site_permissions">Izin situs</string>
 
+    <!--  Preference for cookie banner. The name of the item from settings screen and the title of the cookie banner screen. -->
+    <string name="preferences_cookie_banner">Pengurangan Spanduk Kuki</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is not disabled. -->
+    <string name="preferences_cookie_banner_summary_on">Aktif</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is disabled. -->
+    <string name="preferences_cookie_banner_summary_off">Mati</string>
+
+    <!--  Title preference inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_title">Pengurangan Spanduk Kuki</string>
+
+    <!--  Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_summary">Lihat lebih sedikit spanduk dengan menolak permintaan kuki secara otomatis, jika memungkinkan.</string>
+
+    <!--  Checkbox Preference title inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_title">Mengurangi spanduk kuki lebih lanjut</string>
+
+    <!--  Checkbox Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_summary">Permintaan spanduk kuki akan diterima untuk mengabaikan spanduk lainnya.</string>
+
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Putar Otomatis</string>
+
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Untuk mengizinkannya:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Buka Pengaturan Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Ketuk <b>Perizinan</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Buka Pengaturan</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Aktifkan/Nonaktifkan <b>%1$s</b>]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Kamera</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Mikrofon</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Lokasi</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Pemberitahuan</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Konten yang diatur DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Meminta izin</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Diblokir</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Diizinkan</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Diblokir oleh Android</string>
 
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Izinkan suara dan video</string>
@@ -712,16 +788,14 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">Pengawakutuan jarak jauh melalui USB/Wi-Fi</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Buka %1$s</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Buka</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Sentuh sensor sidik jari untuk melanjutkan.</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Konfirmasi Menggunakan Sidik Jari Anda</string>
 
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Sesi Baru</string>
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Anda dapat menggunakan sidik jari untuk melanjutkan sesi aplikasi Anda saat ini.</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -763,11 +837,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">Situs bertindak tidak terduga?\n Matikan Perlindungan Pelacakan</string>
 
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Konten situs menghilang atau bertingkah aneh?\n
-    Coba matikan Perlindungan Pelacakan Dipertingkat</string>
-
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
     <string name="tip_add_to_homescreen"><![CDATA[Akses satu ketukan ke situs yang sering digunakan%1$s Menu > Tambahkan ke Beranda]]></string>
@@ -785,28 +854,8 @@ The new line here must be kept as the second half of the string is clickable for
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_open_in_new_tab">Buka tautan di tab baru\n Tekan lama tautan di laman</string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Ingin melihat versi lengkap situs?\n
-        Aktifkan Situs Desktop dari menu %1$s</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">Nonaktifkan tips ini pada layar mulai</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Ingin menonaktifkan Perlindungan Pelacakan yang Disempurnakan untuk situs yang Anda percayai?\n
-        Tambahkan ke Daftar yang Diizinkan di Pengaturan
-    </string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Tentu saja, kami tampil berbeda sekarang!\n Baca selengkapnya tentang hal ini dan pembaruan %1$s lainnya.</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Buat pintasan ke situs yang sering Anda kunjungi:\n
-    Pilih Tambahkan ke Pintasan dari menu %1$s</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">Tab baru dibuka</string>
@@ -817,8 +866,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Alihkan tautan langsung ke tab baru</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Penjelajahan Aman</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Blokir situs yang mungkin berbahaya serta penipuan</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -826,9 +873,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Title of the preference to enable "HTTPS-Only" mode -->
     <string name="preference_https_only_title">Mode Hanya HTTPS</string>
-    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Secara otomatis mencoba untuk terhubung ke situs menggunakan HTTPS untuk meningkatkan keamanan. Koneksi HTTPS menyediakan koneksi yang aman dan terenkripsi ke situs web yang Anda kunjungi.</string>
 
+    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
     <string name="preference_https_only_summary3">Secara otomatis mencoba terhubung ke situs menggunakan protokol enkripsi HTTPS untuk meningkatkan keamanan.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -927,7 +973,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Contextual Feature Recommendation Popups -->
     <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_shield_icon">Tampaknya situs ini mencoba melacak Anda. Klik perisai untuk membuka pengaturan situs dan statistik pemblokiran pelacak.</string>
+    <string name="cfr_for_toolbar_shield_icon2">Dapat! Kami menghentikan situs ini untuk memata-mataimu. Ketuk perisai kapan saja untuk melihat apa yang kami blokir.</string>
+
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Tutup popup</string>
 
@@ -940,6 +987,35 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="tool_tip_dismiss_button_content_description">Tutup</string>
 
     <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Singkirkan data pribadi Anda, riwayat penjelajahan, dan lainnya dari sesi ini dengan mengetuk tombol tong sampah. Cobalah!</string>
+    <string name="cfr_for_toolbar_delete_icon2">Ketuk di sini untuk membuang semuanya — riwayat, kuki, semuanya — dan memulai dari tab baru.</string>
 
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for the
+    close button from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Tutup</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Cari widget</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">Riwayat penjelajahan dihapus! 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <!-- Banner Info Message than will appear when user first enters in the app. The location is at the toolbar. -->
+    <string name="cfr_for_start_browsing">Mulai sesi penjelajahan pribadi Anda, dan kami akan memblokir pelacak dan hal buruk lainnya saat Anda menjelajah.</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_dialog_subtitle">Kami akan meninggalkan Anda untuk menjelajah pribadi, tapi dapatkan awal yang lebih cepat lain kali dengan widget %1$s di layar Beranda Anda.</string>
+
+    !-- This is te text from add search widget to home screen button .The button is located on
+    promote search widget dialog. --&gt;
+    <string name="promote_search_widget_button_text">Tambahkan widget ke layar beranda</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Widget ditambahkan ke layar beranda</string>
 </resources>
