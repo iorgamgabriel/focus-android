@@ -294,10 +294,6 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Odemknout aplikaci otiskem prstu</string>
-    <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
-        open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">Pokud je otevřena nějaká stránka, pro otevření bude %1$s vyžadovat váš otisk prstu.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -359,10 +355,6 @@
     <string name="preference_search_add3">Přidat další vyhledávač</string>
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">Vyberte preferovaný vyhledávač:</string>
-
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">Zobrazovat tipy na domovské stránce</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Přidat vyhledávací modul</string>
@@ -492,32 +484,56 @@
 
   <!-- Onboarding: Title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Vítá vás %1$s!</string>
+    <string moz:removedIn="106" name="onboarding_title">Vítá vás %1$s!</string>
+
+    <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Zavřít</string>
+
+    <!-- New Onboarding flow first screen title -->
+    <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
+    <string name="onboarding_first_screen_title">Vítá vás %1$s</string>
+
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Rychlost. Soukromí. Žádné rozptylování.</string>
+
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Začít</string>
+
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">%1$s není jako ostatní prohlížeče</string>
+
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Nastavit jako výchozí prohlížeč</string>
+
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Přeskočit</string>
+
 
     <!-- Onboarding: Description -->
-    <string name="onboarding_description">Vyšší úroveň soukromého prohlížení kdykoliv potřebujete</string>
+    <string moz:removedIn="106" name="onboarding_description">Vyšší úroveň soukromého prohlížení kdykoliv potřebujete</string>
 
     <!-- Onboarding: Incognito Title -->
-    <string name="onboarding_incognito_title">Plášť neviditelnosti a soukromí</string>
+    <string moz:removedIn="106" name="onboarding_incognito_title">Plášť neviditelnosti a soukromí</string>
 
     <!-- Onboarding: Incognito Description -->
     <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
-    <string name="onboarding_incognito_description">%s je prohlížeč zaměřený na soukromí s vestavěnou extra silnou ochranou cookies proti sledování.</string>
+    <string moz:removedIn="106" name="onboarding_incognito_description">%s je prohlížeč zaměřený na ochranu soukromí se zabudovanou mimořádně silnou ochranou proti sledování a před cookies.</string>
 
     <!-- Onboarding: History Title -->
-    <string name="onboarding_history_title">Prohlížejte bez obav</string>
+    <string moz:removedIn="106" name="onboarding_history_title">Prohlížejte bez obav</string>
 
     <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Jediné klepnutí vymaže historii vašeho prohlížení včetně cookies, čímž váš ochrání před sledujícími reklamami.</string>
+    <string moz:removedIn="106" name="onboarding_history_description2">Jediné klepnutí vymaže historii vašeho prohlížení včetně cookies, čímž vás ochrání před sledujícími reklamami.</string>
 
     <!-- Onboarding: Protection Title -->
-    <string name="onboarding_protection_title">Soukromí pro každou situaci</string>
+    <string moz:removedIn="106" name="onboarding_protection_title">Soukromí pro každou situaci</string>
 
     <!-- Onboarding: Protection Description -->
-    <string name="onboarding_protection_description">Úroveň ochrany soukromí během prohlížení si můžete nastavit podle potřeby.</string>
+    <string moz:removedIn="106" name="onboarding_protection_description">Úroveň ochrany soukromí během prohlížení si můžete nastavit podle potřeby.</string>
 
     <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Začněte prohlížet</string>
+    <string moz:removedIn="106" name="onboarding_start_browsing">Začněte prohlížet</string>
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Posuňte své soukromí na vyšší úroveň</string>
@@ -673,6 +689,48 @@
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Automatické přehrávání</string>
 
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Pro povolení:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Otevřete nastavení systému Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Zvolte <b>Oprávnění</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Přejít do nastavení</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Přepněte nastavení u <b>%1$s</b> na ZAP]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Fotoaparát</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Mikrofon</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Umístění</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Oznámení</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Obsah chráněný pomocí DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Vždy se zeptat</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Blokováno</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Povoleno</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Blokováno Androidem</string>
+
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Povolit zvuk i video</string>
 
@@ -709,16 +767,11 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">Vzdálené ladění pomocí USB//Wi-Fi</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Odemknout %1$s</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Odemknout</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Dotkněte se senzoru otisku prstů.</string>
-
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Nová relace</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Potvrďte pomocí otisku prstu</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -760,11 +813,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">Nechová se stránka podle očekávání?\n Zkuste vypnout ochranu proti sledování</string>
 
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Chybí na stránce nějaký obsah?\n
-Zkuste vypnout ochranu proti sledování</string>
-
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
     <string name="tip_add_to_homescreen"><![CDATA[Mějte rychlý přístup k nejpoužívanějším stránkám%1$sNabídka > Přidat na domovskou obrazovku]]></string>
@@ -782,27 +830,8 @@ Zkuste vypnout ochranu proti sledování</string>
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_open_in_new_tab">Otevírejte si odkazy v novém panelu\n Podržte prst na jakémkoliv odkazu na stránce</string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Chcete vidět plnou verzi této stránky?\n
-Přepněte v nabídce aplikace %1$s na verzi pro počítač.</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">Vypnout tipy na domovské stránce</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Chcete na stránkách, kterým důvěřujete, vypnout ochranu proti sledování?\n
-Přidejte je do seznamu výjimek v nastavení</string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Ano, máme nový vzhled.\n Přečtěte si podrobnosti o něm i dalších novinkách v aplikaci %1$s.</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Vytvořte si zkratky na nejnavštěvovanější stránky:
-V nabídce aplikace %1$s vyberte Přidat zkratku</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">Nový panel otevřen</string>
@@ -813,8 +842,6 @@ V nabídce aplikace %1$s vyberte Přidat zkratku</string>
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Přepnout ihned na odkaz v novém panelu</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Bezpečné prohlížení</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Blokovat potenciálně nebezpečné a klamavé stránky</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -824,8 +851,6 @@ V nabídce aplikace %1$s vyberte Přidat zkratku</string>
     <string name="preference_https_only_title">Režim „pouze HTTPS“</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Automaticky navazovat bezpečné spojení k webovým serverů pomocí protokolu HTTPS. Díky HTTPS je navštěvovaná stránka přenášena zabezpečeně pomocí šifrování.</string>
-
     <string name="preference_https_only_summary3">Pro zvýšení zabezpečení se automaticky pokusí připojit k webům pomocí šifrovacího protokolu HTTPS.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -925,9 +950,6 @@ V nabídce aplikace %1$s vyberte Přidat zkratku</string>
     <!-- Content description (not visible, for screen readers etc.): Button that closes a tab n the sessions list -->
     <string name="close_tab">Zavřít panel</string>
 
-    <!-- Contextual Feature Recommendation Popups -->
-    <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_shield_icon">Vypadá to, že se vás tento server pokusil sledovat. Klepněte na ikonu štítu pro zobrazení nastavení a statistik blokování.</string>
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Zavřít vyskakovací okno</string>
 
@@ -939,7 +961,24 @@ V nabídce aplikace %1$s vyberte Přidat zkratku</string>
     <!-- Tool Tip "X" button Content description (not visible, for screen readers etc.) :Button that closes the tool tip -->
     <string name="tool_tip_dismiss_button_content_description">Zavřít</string>
 
-    <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Klepnutím na tlačítko koše zahodíte historii prohlížení a další data z této relace. Zkuste to!</string>
+    <!-- Promote SearchWidget Dialog -->
 
+    !-- Content description (not visible, for screen readers etc.): This is the description for the
+    close button from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Zavřít</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Widget vyhledávání</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">Historie prohlížení vymazána 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_button_text">Přidat widget na domovskou obrazovku</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Widget přidán na domovskou obrazovku</string>
 </resources>

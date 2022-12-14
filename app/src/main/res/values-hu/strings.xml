@@ -119,8 +119,21 @@
 
 
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
-         Clicking this action will launch Focus and perform a search in the default search engine. -->
-    <string name="text_selection_search_action">Privát keresés</string>
+         Focus is hard coded since we can't use variables in this context.
+         Do not translate or transliterate Focus.-->
+    <string name="text_selection_search_action_focus">Keresés a Focusban</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+             Klar is hard coded since we can't use variables in this context.
+             Do not translate or transliterate Klar.-->
+    <string name="text_selection_search_action_klar">Keresés a Klarban</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+            Focus Beta is hard coded since we can't use variables in this context.
+            Do not translate or transliterate Focus Beta.-->
+    <string name="text_selection_search_action_focus_beta">Keresés a Focus Bétában</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+          Focus Nightly is hard coded since we can't use variables in this context.
+          Do not translate or transliterate Focus Nightly.-->
+    <string name="text_selection_search_action_focus_nightly">Keresés a Focus Nightlyban</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
@@ -174,7 +187,7 @@
     <string name="preference_show_search_suggestions">Keresési javaslatok kérése</string>
     <!-- Description of the preference that enables/disables search suggestions
         %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_show_search_suggestions_summary">A %1$s elküldi a címsávba írt szöget a keresőszolgáltatásának</string>
+    <string name="preference_show_search_suggestions_summary">A %1$s elküldi a címsávba írt szöveget a keresőszolgáltatásának</string>
 
     <!-- This label is shown below the name of the default search engine in settings -->
     <string name="preference_search_engine_default">Alapértelmezett</string>
@@ -295,10 +308,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Ujjlenyomat használata az alkalmazás feloldásához</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">Az ujjlenyomata feloldhatja a %1$st, ha egy URL már meg lett nyitva az alkalmazásban. A rejtőzködés be lesz kapcsolva.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Oldja fel a zárolást ujjlenyomattal, ha adott hozzá parancsikonokat, vagy ha egy webhely már meg van nyitva a %sban.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -360,10 +375,6 @@
     <string name="preference_search_add3">További keresőszolgáltatás felvétele</string>
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">Válassza ki az előnyben részesített keresőszolgáltatását:</string>
-
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">Tippek megjelenítése a kezdőképernyőn</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Keresőszolgáltatás hozzáadása</string>
@@ -491,34 +502,37 @@
 
 
 
-  <!-- Onboarding: Title -->
+  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Bezárás</string>
+
+    <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Üdvözli a %1$s!</string>
+    <string name="onboarding_first_screen_title">Üdvözli a %1$s</string>
 
-    <!-- Onboarding: Description -->
-    <string name="onboarding_description">Magasabb szintű privát böngészés, amikor csak akarja</string>
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Gyors. Privát. Zavaró tényezők nélkül.</string>
 
-    <!-- Onboarding: Incognito Title -->
-    <string name="onboarding_incognito_title">Ahol az inkognitó találkozik a láthatatlannal</string>
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Kezdő lépések</string>
 
-    <!-- Onboarding: Incognito Description -->
-    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
-    <string name="onboarding_incognito_description">A %s egy olyan böngésző, amely az adatvédelmet helyezi előtérbe, rendkívül erős beépített nyomkövetés elleni és sütivédelemmel.</string>
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">A %1$s nem olyan, mint a többi böngésző</string>
 
-    <!-- Onboarding: History Title -->
-    <string name="onboarding_history_title">Böngésszen úgy, mintha meg sem történt volna</string>
+    <!-- New Onboarding flow second screen subtitle the one that appears under title -->
+    <string name="onboarding_second_screen_subtitle_one">A fokozott adatvédelem érdekében töröljük az előzményeket, amikor bezárja az alkalmazást.</string>
 
-    <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Egy koppintás törli a böngészési előzményeket és a sütiket – és megakadályozza, hogy a hirdetések kövessék.</string>
+    <!-- New Onboarding flow second screen subtitle two the one that appears under subtitle one -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_subtitle_two">Legyen a %1$s az alapértelmezett, hogy minden megnyitott hivatkozásnál megvédje az adatait.</string>
 
-    <!-- Onboarding: Protection Title -->
-    <string name="onboarding_protection_title">Adatvédelem minden helyzethez</string>
 
-    <!-- Onboarding: Protection Description -->
-    <string name="onboarding_protection_description">Ha a böngészési igényei megváltoznak, könnyen szigorúbbra vagy megengedőbbre állíthatja az adatvédelmi beállításait.</string>
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Beállítás alapértelmezett böngészőként</string>
 
-    <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Böngészés megkezdése</string>
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Kihagyás</string>
+
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Tuningolja fel az adatvédelmét</string>
@@ -531,7 +545,7 @@
     <string name="firstrun_search_text">Valami mást keres? Válasszon másik alapértelmezett keresőszolgáltatást a Beállításokban.</string>
 
     <!-- First run tour (Shortcut): Title -->
-    <string name="firstrun_shortcut_title">Adjon ikonokat a kezdőképernyőre</string>
+    <string name="firstrun_shortcut_title">Parancsikonok hozzáadása a kezdőképernyőhöz</string>
     <!-- First run tour (Shortcut): Text. %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
     <string name="firstrun_shortcut_text">Térjen vissza gyorsan a kedvenc oldalaihoz a %1$sban. Csak válassza a „Hozzáadás a kezdőképernyőre” lehetőséget a %1$s menüből.</string>
 
@@ -673,8 +687,71 @@
     <!-- Preference for site permissions -->
     <string name="preference_site_permissions">Oldalengedélyek</string>
 
+    <!--  Preference for cookie banner. The name of the item from settings screen and the title of the cookie banner screen. -->
+    <string name="preferences_cookie_banner">Sütibannerek számának csökkentése</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is not disabled. -->
+    <string name="preferences_cookie_banner_summary_on">Be</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is disabled. -->
+    <string name="preferences_cookie_banner_summary_off">Ki</string>
+
+    <!--  Title preference inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_title">Sütibannerek számának csökkentése</string>
+
+    <!--  Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_summary">Lásson kevesebb bannert a sütikérések automatikus elutasításával, ha az lehetséges.</string>
+
+    <!--  Checkbox Preference title inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_title">Csökkentse tovább a sütibannerek számát</string>
+
+    <!--  Checkbox Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_summary">A sütibannerkérések el lesznek fogadva, hogy még több banner legyen eltüntetve.</string>
+
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Automatikus lejátszás</string>
+
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Az engedélyezés módja:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Ugorjon az Android beállításokhoz</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Koppintson az <b>Engedélyek</b> lehetőségre]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Ugrás a beállításokhoz</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Kapcsolja BE a következőt: <b>%1$s</b>]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Kamera</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Mikrofon</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Hely</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Értesítés</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">DRM-vezérelt tartalom</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Kérdezzen rá</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Blokkolva</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Engedélyezve</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Az Android blokkolta</string>
 
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Hang és videó engedélyezése</string>
@@ -712,16 +789,14 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">Távoli hibakeresés USB-n/Wi-Fi-n</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">A %1$s feloldása</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Feloldás</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Érintse meg az ujjlenyomat-leolvasót a folytatáshoz.</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Erősítse meg az ujjlenyomatával</string>
 
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Új munkamenetet</string>
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Ujjlenyomatával folytathatja az alkalmazás jelenlegi munkamenetét.</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -763,11 +838,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">Az oldal váratlanul viselkedik?\nPróbálja kikapcsolni a követésvédelmet</string>
 
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Az oldal tartalma hiányzik vagy furán viselkedik?\n
-    Próbálja kikapcsolni a fokozott követés elleni védelmet</string>
-
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
     <string name="tip_add_to_homescreen"><![CDATA[Érje el a leggyakrabban használt oldalakat egy koppintással%1$s Menü > Hozzáadás a kezdőképernyőhöz]]></string>
@@ -785,28 +855,8 @@ The new line here must be kept as the second half of the string is clickable for
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_open_in_new_tab">Nyissa meg a hivatkozást új lapon\nNyomja meg hosszan bármelyik hivatkozást az oldalon</string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">A webhely teljes verzióját szeretné látni?\n
-        Váltson az asztali oldalra a %1$s menüjéből</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">A tippek kikapcsolása a kezdőképernyőn</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Ki szeretné kapcsolni a fokozott követés elleni védelmet egy megbízható oldalon?\n
-        Adja hozzá az engedélyezési listához a Beállításokban
-    </string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Igen, friss, új kinézetünk van!\n Olvasson többet erről és a többi %1$s frissítésről.</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Hozzon létre parancsikonokat a leggyakrabban felkeresett webhelyekhez:\n
-    Válassza a Hozzáadás a parancsikonokhoz lehetőséget a %1$s menüben</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">Új lap megnyitva</string>
@@ -817,8 +867,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Azonnali átváltás az új fülre</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Biztonságos böngészés</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">A potenciálisan veszélyes és megtévesztő oldalak blokkolása</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -828,8 +876,6 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="preference_https_only_title">Csak HTTPS mód</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Automatikusan HTTPS-sel próbál kapcsolódni a webhelyekhez a nagyobb biztonság érdekében. A HTTPS-kapcsolatok biztonságos, titkosított kapcsolatot biztosítanak a felkeresett webhelyekkel.</string>
-
     <string name="preference_https_only_summary3">Automatikusan HTTPS titkosítási protokoll használatával próbál meg csatlakozni a webhelyekhez a fokozott biztonság érdekében.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -931,7 +977,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Contextual Feature Recommendation Popups -->
     <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_shield_icon">Úgy tűnik, ez a webhely megpróbálta követni Önt. Kattintson a pajzsra a webhelybeállítások és a követőblokkolási statisztikák megtekintéséhez.</string>
+    <string name="cfr_for_toolbar_shield_icon2">Megvannak! Megakadályoztuk, hogy ez a webhely kémkedjen Ön után. Koppintson a pajzsra, hogy megtudja mit blokkoltunk.</string>
+
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Felugró ablak bezárása</string>
 
@@ -944,6 +991,35 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="tool_tip_dismiss_button_content_description">Eltüntetés</string>
 
     <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Megszabadulhat személyes adataitól, böngészési előzményeitől és egyebektől ebből a munkamenetből a kuka gombra történő koppintással. Próbálja ki!</string>
+    <string name="cfr_for_toolbar_delete_icon2">Koppintson ide, hogy mindent töröljön – az előzményeket, a sütiket, mindent –, és tiszta lappal induljon.</string>
 
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Bezárás</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Keresési modul</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">A böngészési előzmények törölve! 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <!-- Banner Info Message than will appear when user first enters in the app. The location is at the toolbar. -->
+    <string name="cfr_for_start_browsing">Indítsa el a privát böngészési munkamenetet, és menet közben blokkoljuk a nyomkövetőket és az egyéb rossz dolgokat.</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_dialog_subtitle">Hagyjuk, hogy elkezdje a privát böngészést, de legközelebb gyorsabban nekiláthat a kezdőképernyőn található %1$s modullal.</string>
+
+    !-- This is te text from add search widget to home screen button .The button is located on
+    promote search widget dialog. --&gt;
+    <string name="promote_search_widget_button_text">Modul hozzáadása a kezdőképernyőhöz</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Modul hozzáadva a kezdőképernyőhöz</string>
 </resources>

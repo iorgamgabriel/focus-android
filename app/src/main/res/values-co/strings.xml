@@ -28,7 +28,7 @@
     <string name="search_hint">Ricercà %1$s</string>
 
     <!-- Menu item: Share the currently visible page -->
-    <string name="menu_share">Sparte...</string>
+    <string name="menu_share">Sparte…</string>
 
     <!-- Menu item: Report an issue on the current site -->
     <string name="menu_report_site_issue">Signalà un penseru nant’à stu situ</string>
@@ -42,7 +42,7 @@
       will be shown if there are multiple browsers and we do not know which one is the default
       browser or in case Focus is actually the default browser. Clicking this menu item will show
       a screen with multiple browsers (or other apps that can open the current URL) to choose from. -->
-    <string name="menu_open_with_a_browser2">Apre cù...</string>
+    <string name="menu_open_with_a_browser2">Apre cù…</string>
 
     <!-- Menu item: Add the current page as a shortcut to the device's home screen (launcher). -->
     <string name="menu_add_to_home_screen">Fissà à u screnu d’accolta</string>
@@ -119,18 +119,31 @@
 
 
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
-         Clicking this action will launch Focus and perform a search in the default search engine. -->
-    <string name="text_selection_search_action">Fà una ricerca privata</string>
+         Focus is hard coded since we can't use variables in this context.
+         Do not translate or transliterate Focus.-->
+    <string name="text_selection_search_action_focus">Circà in Focus</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+             Klar is hard coded since we can't use variables in this context.
+             Do not translate or transliterate Klar.-->
+    <string name="text_selection_search_action_klar">Circà in Klar</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+            Focus Beta is hard coded since we can't use variables in this context.
+            Do not translate or transliterate Focus Beta.-->
+    <string name="text_selection_search_action_focus_beta">Circà in Focus Beta</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+          Focus Nightly is hard coded since we can't use variables in this context.
+          Do not translate or transliterate Focus Nightly.-->
+    <string name="text_selection_search_action_focus_nightly">Circà in Focus Nightly</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
     <string name="about_content"><![CDATA[<p>%1$s vi aiuta à stà à e cumande.</p>
 <p>Impiegatelu cum’è un navigatore privatu :
-· <ul>
-· <li>Fate ricerche è navigate cù l’appiecazione</li>
-· <li>Bluccate i perseguitatori (o mudificà e preferenze per auturizalli)</li>
-· <li>Squassà i canistrelli è ancu e cronolugie di navigazione è di ricerca</li>
-· </ul>
+  <ul>
+    <li>Fate ricerche è navigate cù l’appiecazione</li>
+    <li>Bluccate i perseguitatori (o mudificà e preferenze per auturizalli)</li>
+    <li>Squassate i canistrelli è ancu e cronolugie di navigazione è di ricerca</li>
+  </ul>
 </p>
 <p>%1$s hè sviluppatu da Mozilla. A nostra missione hè d’incuragisce un Internet apertu è in bella saluta.<br/>
 <a href="%2$s">Per sapene di più</a></p>]]></string>
@@ -291,14 +304,16 @@
     <string name="preference_privacy_should_block_cookies_third_party_only_option">Bluccà solu i canistrelli terzi</string>
 
     <string name="preference_privacy_should_block_cookies_cross_site_option">Bluccà i canistrelli intersiti</string>
-    <string name="preference_privacy_should_block_cookies_yes_option2">Iè, per piacè</string>
+    <string name="preference_privacy_should_block_cookies_yes_option2">Sì, per piacè</string>
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Impiegà un’impronta digitale per spalancà l’appiecazione</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">A vostra impronta digitale pò spalancà %1$s s’è un URL hè dighjà aperta dentru l’appiecazione. U modu furtivu serà attivatu.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Spalancate cù l’impronta digitale s’è vo avete aghjuntu accurtatoghji o quandu un situ web hè dighjà apertu in %s.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -361,10 +376,6 @@
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">Selezziunate u vostru mutore di ricerca preferitu :</string>
 
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">Affissà minichichje nant’à u screnu d’accolta</string>
-
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Aghjunghje un mutore di ricerca</string>
 
@@ -407,7 +418,7 @@
 
     <!-- This text is not visible. Instead it will be read by the accessibility service once we start
      loading a website -->
-    <string name="accessibility_announcement_loading">Caricamentu...</string>
+    <string name="accessibility_announcement_loading">Caricamentu</string>
 
     <!-- This text is not visible. Instead it will be read by the accessibility service once we
      finished loading a website -->
@@ -491,34 +502,36 @@
 
 
 
-  <!-- Onboarding: Title -->
+  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Chjode</string>
+
+    <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Benvenuta in %1$s !</string>
+    <string name="onboarding_first_screen_title">Benvenuta in %1$s</string>
 
-    <!-- Onboarding: Description -->
-    <string name="onboarding_description">Navigazione privata di livellu superiore secondu à i vostri bisogni</string>
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Rapidu. Pruvatu. Senza distrazzione.</string>
 
-    <!-- Onboarding: Incognito Title -->
-    <string name="onboarding_incognito_title">Induve l’incognitu scontra l’invisibile</string>
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Principià</string>
 
-    <!-- Onboarding: Incognito Description -->
-    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
-    <string name="onboarding_incognito_description">%s hè un navigatore primurosu di cunfidenzialità cù prutezzioni integrate assai forte contr’à u spiunagiu è i canistrelli.</string>
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">%1$s ùn hè micca cum’è l’altri navigatori</string>
 
-    <!-- Onboarding: History Title -->
-    <string name="onboarding_history_title">Navigate cum’è s’ella fussi a prima volta</string>
+    <!-- New Onboarding flow second screen subtitle the one that appears under title -->
+    <string name="onboarding_second_screen_subtitle_one">Per più di cunfidenzialità, squassemu a vostra cronolugia quandu si chjode l’appiecazione.</string>
 
-    <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Una picchicciata squassa a cronolugia di a vostra navigazione è i canistrelli - è impedisce e publicità di seguità i vostri circondi.</string>
+    <!-- New Onboarding flow second screen subtitle two the one that appears under subtitle one -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_subtitle_two">Fate di %1$s u vostru navigatore predefinitu per prutege i vostri dati à l’apertura d’ogni liame.</string>
 
-    <!-- Onboarding: Protection Title -->
-    <string name="onboarding_protection_title">A cunfidenzialità adattata à ogni situazione</string>
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Sceglie cum’è navigatore predefinitu</string>
 
-    <!-- Onboarding: Protection Description -->
-    <string name="onboarding_protection_description">S’è a vostra navigazione richiede di cambià, hè faciule di graduà più o menu e vostre preferenze di cunfidenzialità.</string>
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Ignurà</string>
 
-    <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Principià a navigazione</string>
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Rinfurzà a vostra vita privata</string>
@@ -551,7 +564,7 @@
     <string name="dialog_addtohomescreen_action_add">Aghjunghje</string>
 
     <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
-    <string name="dialog_addtohomescreen_action_yes">IÈ</string>
+    <string name="dialog_addtohomescreen_action_yes">SÌ</string>
 
     <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->
     <string name="dialog_addtohomescreen_action_cancel">Abbandunà</string>
@@ -673,8 +686,71 @@
     <!-- Preference for site permissions -->
     <string name="preference_site_permissions">Permessi di situ</string>
 
+    <!--  Preference for cookie banner. The name of the item from settings screen and the title of the cookie banner screen. -->
+    <string name="preferences_cookie_banner">Riduzzione di e striscie di cannistrelli</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is not disabled. -->
+    <string name="preferences_cookie_banner_summary_on">Attivata</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is disabled. -->
+    <string name="preferences_cookie_banner_summary_off">Disattivata</string>
+
+    <!--  Title preference inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_title">Riduzzione di e striscie di cannistrelli</string>
+
+    <!--  Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_summary">Fighjate menu di striscie righjittendu autumaticamente e dumande di canistrelli quand’ellu hè pussibule.</string>
+
+    <!--  Checkbox Preference title inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_title">Riduce ancu di più e striscie di canistrelli</string>
+
+    <!--  Checkbox Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_summary">E dumande di canistrelli nant’à e striscie seranu accettate per chjode più di striscie.</string>
+
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Leghje autumaticamente l’elementi multimedià</string>
+
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Per permettelu :</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Andate à e preferenze Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Tucchate <b>Permessi</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Andà à e preferenze</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Attivate <b>%1$s</b>]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Apparechju-fotò</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Microfonu</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Lucalizazione</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Nutificazioni</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Cuntenutu cuntrollatu da DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Dumandà per permette</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Bluccatu</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Permessu</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Bluccatu da Android</string>
 
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Permette l’audio è a video</string>
@@ -712,16 +788,14 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">Spannatura alluntanata via USB/Wi-Fi</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Spalancà %1$s</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Sbluccà</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Tuccate u lettore d’impronta digitale per cuntinuà.</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Cunfirmate cù a vostra impronta digitale</string>
 
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Nova sessione</string>
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Pudete impiegà a vostra impronta digitale per cuntinuà a sessione currente di l’appiecazione.</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -746,10 +820,10 @@
     <string name="enable_search_suggestion_description">Per ottene sugestioni di ricerca, %1$s hà bisognu di mandà à u mutore di ricerca ciò chì vo stampittate in a barra d’indirizzu.</string>
 
     <!-- Label used for the "NO button" for the prompt to enable search suggestions -->
-    <string name="enable_search_suggestions_no">Innò</string>
+    <string name="enable_search_suggestions_no">Nò</string>
 
     <!-- Label used for the "YES button" for the prompt to enable search suggestions -->
-    <string name="enable_search_suggestions_yes">Iè</string>
+    <string name="enable_search_suggestions_yes">Sì</string>
 
     <!-- Message displayed when using a search engine that doesn't provide suggestions -->
     <string name="no_suggestions_message">Certi mutori di ricerca ùn ponu affissà sugestioni.</string>
@@ -763,11 +837,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">Stu situ ùn si cumporta micca cum’è previstu ?\n
     Pruvate di disattivà a prutezzione contr’à u spiunagiu</string>
-
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Ci seria u cuntenutu chì manca o u situ si cumpurteria d’una manera strana ?\n
-    Pruvate di disattivà a prutezzione rinfurzata contr’à u spiunagiu</string>
 
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
@@ -790,28 +859,8 @@ The new line here must be kept as the second half of the string is clickable for
     Effettuate una longa incalcata nant’à un liame in una pagina
     </string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Vulete fighjà a versione cumpleta d’un situ ?\n
-        Passate à a versione d’urdinatore da u listinu di %1$s</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">Disattivà e minichichje nant’à u screnu d’avviu</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Vulete disattivà a prutezzione rinfurzata contr’à u spiunagiu per un situ di cunfidenza chì voi cunniscite ?\n
-        Aghjunghjelu à a lista di i siti di cunfidenza in e Preferenze
-    </string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Hè vera, avemu un aspettu tuttu novu !\n Sapene di più apprupositu di què è d’altre mudificazioni nant’à %1$s.</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Create l’accurtatoghji per i siti chì vo visitate u più :\n
-    Selezziunate « Aghjunghje à l’accurtatoghji » in u listinu di %1$s</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">Nova unghjetta aperta</string>
@@ -822,8 +871,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Affissà subitu ogni liame apertu in una nova unghjetta</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Navigazione assicurizata</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Bluccà i siti chì puderianu esse periculosi o ingannatori</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -831,9 +878,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Title of the preference to enable "HTTPS-Only" mode -->
     <string name="preference_https_only_title">Modu solu HTTPS</string>
-    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Tentativu autumaticu di cunnessione à i siti impieghendu HTTPS per aummentà a sicurità. E cunnessioni HTTPS furniscenu una cunnessione sicura è cifrata à i siti visitati.</string>
 
+    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
     <string name="preference_https_only_summary3">Tentativu autumaticu di cunnessione à i siti impieghendu u protocollu di cifratura HTTPS per aumentà a sicurità.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -854,7 +900,7 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Title for the tab crash report screen-->
     <string name="tab_crash_report_title">L’unghjetta hè rotta</string>
     <!-- Headline for the tab crash report screen -->
-    <string name="tab_crash_report_headline">Peccatu. Avemu un penseru cù st’unghjetta.</string>
+    <string name="tab_crash_report_headline">Per disgrazia, avemu un prublema cù st’unghjetta.</string>
     <!-- Subtitle for the tab crash report screen -->
     <string name="tab_crash_report_description">Cum’è a navigazione era privata, ùn avemu micca arregistratu l’unghjetta è dunque ùn pudemu micca risturalla.</string>
     <!-- Label for button to close the tab-->
@@ -864,7 +910,7 @@ The new line here must be kept as the second half of the string is clickable for
 
 
   <!-- Label for the checkbox to send the tab crash report to Mozilla -->
-    <string name="crash_report_send_crash_label">Mandà un raportu di penseri à Mozilla</string>
+    <string name="crash_report_send_crash_label">Mandà un raportu d’accidente à Mozilla</string>
 
     <!-- Tracking protection bottom sheet -->
 
@@ -927,7 +973,7 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="errorpage_httpsonly_title">U situ richiestu ùn permette micca u modu HTTPS</string>
 
     <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus") -->
-    <string name="errorpage_httpsonly_message">Per aummentà a sicurità, l’ozzione predefinita di %1$s hè di fà un tentativu autumaticu di cunnessione impieghendu HTTPS. Per cambià sta definizione, o per sapene di più, andate in Preferenze &gt; Vita privata è sicurità &gt; Sicurità.</string>
+    <string name="errorpage_httpsonly_message">Per aumentà a sicurità, l’ozzione predefinita di %1$s hè di fà un tentativu autumaticu di cunnessione impieghendu HTTPS. Per cambià sta definizione, o per sapene di più, andate in Preferenze &gt; Vita privata è sicurità &gt; Sicurità.</string>
 
     <!-- Sessions List -->
     <!-- Content description (not visible, for screen readers etc.): Button that closes a tab n the sessions list -->
@@ -935,7 +981,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Contextual Feature Recommendation Popups -->
     <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_shield_icon">Pare chì stu situ pruvava di seguitavvi. Fate un cliccu nant’à u scudu per vede e preferenze per u situ è e statistiche di blucchime di i perseguitatori.</string>
+    <string name="cfr_for_toolbar_shield_icon2">Missione compia ! Avemu fermatu u spiunagiu da stu situ. Picchichjate u scudu à ogni mumentu per vede ciò chì no blucchemu.</string>
+
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Chjode a finestra popup</string>
 
@@ -949,6 +996,35 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="tool_tip_dismiss_button_content_description">Righjittà</string>
 
     <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Sbarazzatevi di i vostri dati persunali, cronolugia di navigazione è ancu di più di sta sessione picchichjendu nant’à u buttone di a curbella. Pruvate puru !</string>
+    <string name="cfr_for_toolbar_delete_icon2">Picchicciate quì per squassà tuttu - cronolugia, canistrelli, ecc. - è principiate à zeru in un’unghjetta nova.</string>
 
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for the
+    close button from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Chjode</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Widget di ricerca</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">Cronolugia di navigazione squassata ! 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <!-- Banner Info Message than will appear when user first enters in the app. The location is at the toolbar. -->
+    <string name="cfr_for_start_browsing">Principiate a vostra sessione di navigazione privata è noi bluccheremu l’elementi di spiunagiu è l’altre minacce durante a navigazione.</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_dialog_subtitle">Vi lasciemu à a vostra navigazione privata, ma principiate più prestu e prossime volte cù u widget %1$s nant’à u vostru screnu d’accolta.</string>
+
+    !-- This is te text from add search widget to home screen button .The button is located on
+    promote search widget dialog. --&gt;
+    <string name="promote_search_widget_button_text">Aghjunghje u widget à u screnu d’accolta</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Widget aghjuntu à u screnu d’accolta</string>
 </resources>

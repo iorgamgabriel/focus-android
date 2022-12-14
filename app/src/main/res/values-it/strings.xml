@@ -120,8 +120,21 @@
 
 
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
-         Clicking this action will launch Focus and perform a search in the default search engine. -->
-    <string name="text_selection_search_action">Ricerca anonima</string>
+         Focus is hard coded since we can't use variables in this context.
+         Do not translate or transliterate Focus.-->
+    <string name="text_selection_search_action_focus">Cerca in Focus</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+             Klar is hard coded since we can't use variables in this context.
+             Do not translate or transliterate Klar.-->
+    <string name="text_selection_search_action_klar">Cerca in Klar</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+            Focus Beta is hard coded since we can't use variables in this context.
+            Do not translate or transliterate Focus Beta.-->
+    <string name="text_selection_search_action_focus_beta">Cerca in Focus Beta</string>
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+          Focus Nightly is hard coded since we can't use variables in this context.
+          Do not translate or transliterate Focus Nightly.-->
+    <string name="text_selection_search_action_focus_nightly">Cerca in Focus Nightly</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
@@ -296,10 +309,12 @@
 
     <!-- Preference Title: Biometrics can be used to unlock Focus if the previous session's data was not erased by the user. -->
     <string name="preference_security_biometric">Usa l’impronta digitale per sbloccare l’app</string>
+
     <!-- Preference Summary: Biometrics (iris scan, fingerprint, or facial scan) can be used to unlock Focus if the app had a URL
         open when the app was last run to ensure that only the phone's owner can view a previous session.
-        %1$s will be replaced by the app name (e.g. Firefox Focus) -->
-    <string name="preference_security_biometric_summary">L’impronta digitale ti permette di sbloccare %1$s se un URL è già stato aperto nell’app. Verrà attivata l’impostazione Invisibile.</string>
+        %s will be replaced by the app name (e.g. Firefox Focus)
+        Shortcuts is a feature that allows the user to pin his favorite websites to Focus home screen so he can quickly access them-->
+    <string name="preference_security_biometric_summary2">Sblocca utilizzando l’impronta digitale se hai aggiunto scorciatoie o quando un sito web è già aperto in %s.</string>
 
     <!-- Preference Title: Secure Mode is a setting that prevents the app's content to show up in the "recent apps" screen
          and prevents the user from taking screenshots or casting the app to other displays. -->
@@ -361,10 +376,6 @@
     <string name="preference_search_add3">Aggiungi un altro motore di ricerca</string>
     <!-- Explanation text above the list of search engines-->
     <string name="preference_select_preferred_engine">Seleziona il motore di ricerca preferito:</string>
-
-    <!-- Title: Homescreen tips settings toggle to determine whether or not tips are displayed when
-     a user first launches the app. -->
-    <string name="preference_homescreen_tips">Visualizza suggerimenti sulla schermata iniziale</string>
 
     <!-- Clickable action text that shows when user long-presses on a search engine search field (this is similar to paste or copy when long-pressing a text field) -->
     <string name="action_option_add_search_engine">Aggiungi motore di ricerca</string>
@@ -492,39 +503,41 @@
 
 
 
-  <!-- Onboarding: Title -->
+  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
+    <string name="onboarding_close_button_content_description">Chiudi</string>
+
+    <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
-    <string name="onboarding_title">Benvenuto in %1$s.</string>
+    <string name="onboarding_first_screen_title">Benvenuto in %1$s</string>
 
-    <!-- Onboarding: Description -->
-    <string name="onboarding_description">Un livello superiore di navigazione anonima, ogni volta che vuoi</string>
+    <!-- New Onboarding flow first screen subtitle the one that appears under title -->
+    <string name="onboarding_first_screen_subtitle">Veloce. Privato. Nessuna distrazione.</string>
 
-    <!-- Onboarding: Incognito Title -->
-    <string name="onboarding_incognito_title">Più invisibile che in incognito</string>
+    <!-- New Onboarding flow first screen button label-->
+    <string name="onboarding_first_screen_button_text">Inizia</string>
 
-    <!-- Onboarding: Incognito Description -->
-    <!-- Text %s will be replaced with the name of the app (e.g. Focus, Klar) -->
-    <string name="onboarding_incognito_description">%s è un browser sviluppato per la privacy, con protezione integrata dal tracciamento e dai cookie della massima efficacia.</string>
+    <!-- Onboarding second screen: Title -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_title">%1$s non è come gli altri browser</string>
 
-    <!-- Onboarding: History Title -->
-    <string name="onboarding_history_title">Naviga come non hai mai fatto</string>
+    <!-- New Onboarding flow second screen subtitle the one that appears under title -->
+    <string name="onboarding_second_screen_subtitle_one">Cancelliamo la tua cronologia quando chiudi l’app per garantirti una maggiore privacy.</string>
 
-    <!-- Onboarding: History Description -->
-    <string name="onboarding_history_description">Un tocco cancella la cronologia di navigazione e i cookie, impedendo agli annunci pubblicitari di seguirti.</string>
+    <!-- New Onboarding flow second screen subtitle two the one that appears under subtitle one -->
+    <!-- %1$s will be replaced by the app short name(Focus) -->
+    <string name="onboarding_second_screen_subtitle_two">Imposta %1$s come browser predefinito per proteggere i tuoi dati quando apri qualsiasi link.</string>
 
-    <!-- Onboarding: Protection Title -->
-    <string name="onboarding_protection_title">Privacy che si adatta a qualsiasi situazione</string>
+    <!-- New Onboarding flow second screen make Focus default browser button label-->
+    <string name="onboarding_second_screen_default_browser_button_text">Imposta come browser predefinito</string>
 
-    <!-- Onboarding: Protection Description -->
-    <string name="onboarding_protection_description">Se hai bisogno di adattare la tua navigazione, è semplice aumentare o diminuire il livello di protezione della privacy.</string>
+    <!-- New Onboarding flow second screen skip onboarding button label-->
+    <string name="onboarding_second_screen_skip_button_text">Ignora</string>
 
-    <!-- Onboarding: Start browsing -->
-    <string name="onboarding_start_browsing">Inizia a navigare</string>
 
     <!-- First run tour (Default browser): Title -->
     <string name="firstrun_defaultbrowser_title">Potenzia la tua privacy</string>
     <!-- First run tour (Default browser): Text. -->
-    <string name="firstrun_defaultbrowser_text2">Porta la navigazione anonima al livello superiore. Blocca pubblicità e altri contenuti che cercano di seguirti attraverso siti diversi e rallentano il caricamento delle pagine.</string>
+    <string name="firstrun_defaultbrowser_text2">Porta la navigazione anonima a un livello superiore. Blocca pubblicità e altri contenuti che cercano di seguirti attraverso siti diversi e rallentano il caricamento delle pagine.</string>
 
     <!-- First run tour (Search): Title -->
     <string name="firstrun_search_title">La ricerca a modo tuo</string>
@@ -541,7 +554,7 @@
     <!-- First run tour (Privacy): Text. %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
     <string name="firstrun_privacy_text">Imposta %1$s come browser predefinito e goditi i vantaggi della navigazione anonima quando apri pagine web da altre app.</string>
 
-    <string name="firstrun_close_button">Ho capito!</string>
+    <string name="firstrun_close_button">OK</string>
     <string name="firstrun_skip_button">Ignora</string>
     <string name="firstrun_next_button">Avanti</string>
 
@@ -674,8 +687,71 @@
     <!-- Preference for site permissions -->
     <string name="preference_site_permissions">Permessi dei siti</string>
 
+    <!--  Preference for cookie banner. The name of the item from settings screen and the title of the cookie banner screen. -->
+    <string name="preferences_cookie_banner">Riduzione banner per i cookie</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is not disabled. -->
+    <string name="preferences_cookie_banner_summary_on">Attiva</string>
+
+    <!--  Preference summary for the cookie banner. If the cookie banner option is disabled. -->
+    <string name="preferences_cookie_banner_summary_off">Disattivata</string>
+
+    <!--  Title preference inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_title">Riduzione banner per i cookie</string>
+
+    <!--  Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to disabled or reject_all. -->
+    <string name="cookie_banner_reject_all_option_summary">Visualizza meno banner rifiutando automaticamente, dove possibile, le richieste di cookie.</string>
+
+    <!--  Checkbox Preference title inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_title">Riduci ulteriormente i banner per i cookie</string>
+
+    <!--  Checkbox Preference summary inside Cookie banner reduction screen. Here you can set the cookie banner option to reject_or_accept_all or reject_all. -->
+    <string name="cookie_banner_further_reduce_option_summary">Le richieste nei banner per i cookie verranno accettate per rimuovere più banner.</string>
+
     <!-- Preference for autoplay -->
     <string name="preference_autoplay">Riproduzione automatica</string>
+
+    <!-- Heading for the instructions to allow a permission -->
+    <string name="phone_feature_blocked_intro">Per consentirlo:</string>
+
+    <!-- First step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_settings">1. Apri le impostazioni di Android</string>
+
+    <!-- Second step for the allowing a permission -->
+    <string name="phone_feature_blocked_step_permissions"><![CDATA[2. Tocca <b>Autorizzazioni</b>]]></string>
+
+    <!-- Button label that take the user to the Android App setting -->
+    <string name="phone_feature_go_to_settings">Apri Impostazioni</string>
+
+    <!-- Third step for allowing a permission. The placeholder will be updated by, for example, "Camera" -->
+    <string name="phone_feature_blocked_step_feature"><![CDATA[3. Imposta <b>%1$s</b> su Consenti]]></string>
+
+    <!-- Preference for altering the camera access for all websites -->
+    <string name="preference_phone_feature_camera">Fotocamera</string>
+
+    <!-- Preference for altering the microphone access for all websites -->
+    <string name="preference_phone_feature_microphone">Microfono</string>
+
+    <!-- Preference for altering the location access for all websites -->
+    <string name="preference_phone_feature_location">Posizione</string>
+
+    <!-- Preference for altering the notification access for all websites -->
+    <string name="preference_phone_feature_notification">Notifiche</string>
+
+    <!-- Preference for altering the EME access for all websites -->
+    <string name="preference_phone_feature_media_key_system_access">Contenuti protetti da DRM</string>
+
+    <!-- Label that indicates that a permission must be asked always -->
+    <string name="preference_option_phone_feature_ask_to_allow">Chiedi il consenso</string>
+
+    <!-- Label that indicates that a permission must be blocked -->
+    <string name="preference_option_phone_feature_blocked">Bloccato</string>
+
+    <!-- Label that indicates that a permission must be allowed -->
+    <string name="preference_option_phone_feature_allowed">Consentito</string>
+
+    <!--Label that indicates a permission is by the Android OS-->
+    <string name="phone_feature_blocked_by_android">Bloccato da Android</string>
 
     <!-- Preference for allow autoplay audio and video-->
     <string name="preference_allow_audio_video_autoplay">Consenti audio e video</string>
@@ -713,16 +789,14 @@
     <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
     <string name="preference_remote_debugging">Debug remoto attraverso USB/Wi-Fi</string>
 
-    <!-- Title for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     %1$s is replaced with the app name -->
-    <string name="biometric_auth_title">Sblocca %1$s</string>
+    <!-- Text Button for show biometric prompt -->
+    <string name="show_biometric_button_text">Sblocca</string>
 
-    <!-- Description for the fingerprint authentication dialog box that is shown to the user when opening the app -->
-    <string name="biometric_auth_description">Tocca il sensore dell’impronta digitale per continuare.</string>
+    <!-- Title text for biometric prompt pop-up -->
+    <string name="biometric_prompt_title">Conferma utilizzando la tua impronta digitale</string>
 
-    <!-- New session button for the fingerprint authentication dialog box that is shown to the user when opening the app.
-     When pressed, the user's previous session is cleared, and authentication is not required. -->
-    <string name="biometric_auth_new_session">Nuova sessione</string>
+    <!-- Subtitle text for biometric prompt pop-up -->
+    <string name="biometric_prompt_subtitle">Puoi utilizzare la tua impronta digitale per continuare la sessione corrente dell’app.</string>
 
     <!-- Button for the fingerprint authentication dialog box that is shown to the user when sharing a link to the app
     while the user has biometric authentication enabled. When pressed, the user's previous session is cleared, and the shared link is opened. -->
@@ -764,10 +838,6 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">Un sito mostra un comportamento anomalo?\n Prova a disattivare la protezione antitracciamento</string>
 
-    <!-- Tip displayed on home view explaining how to disable enhanced tracking protection
-The new line here must be kept as the second half of the string is clickable for the user. -->
-    <string name="tip_disable_tracking_protection3">Nel sito mancano contenuti o si verificano comportamenti anomali?\n Prova a disattivare la Protezione antitracciamento avanzata</string>
-
     <!-- Tip displayed on home view explaining how to add sites to homescreen
     Argument 1 will be replaced with a line break in the application.-->
     <string name="tip_add_to_homescreen"><![CDATA[Accedi con un solo tocco ai siti che visiti più spesso%1$s Menu > Agg. a schermata principale]]></string>
@@ -785,25 +855,8 @@ The new line here must be kept as the second half of the string is clickable for
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_open_in_new_tab">Apri un link in una nuova scheda\n Tieni premuto a lungo un link in una pagina</string>
 
-    <!-- Tip displayed on home view explaining how to request the desktop version of a website.
-      %1$s is a placeholder for the app name. -->
-    <string name="tip_request_desktop2">Vuoi vedere la versione completa di un sito?\n Attiva Sito desktop dal menu di %1$s</string>
-
     <!-- Tip displayed on home view explaining how to add a custom autocomplete URL -->
     <string name="tip_disable_tips2">Disattiva suggerimenti nella schermata iniziale</string>
-
-    <!-- Tip displayed on the home view explaining how to use the Allowlist feature.
-     "Allowlist" is a replacement for the word whitelist. -->
-    <string name="tip_explain_allowlist3">Vuoi disattivare la Protezione antitracciamento avanzata per un sito di cui ti fidi?\n Aggiungilo all’elenco dei siti consentiti nelle Impostazioni</string>
-
-    <!-- Tip displayed on the home view about the changes in the new release.
-    %1$s is a placeholder for the app name -->
-    <string name="tip_fresh_look">Ebbene sì, abbiamo un nuovo look!\n Ulteriori informazioni su questo e altri aggiornamenti di %1$s.</string>
-
-    <!-- Tip displayed on the home view about shortcuts
-    %1$s is a placeholder for the app name -->
-    <string name="tip_about_shortcuts">Crea scorciatoie ai siti che visiti più frequentemente:\n
-   Seleziona Aggiungi alle scorciatoie dal menu di %1$s</string>
 
     <!-- Label for the snackbar when a user opens a new tab -->
     <string name="new_tab_opened_snackbar">Aperta nuova scheda</string>
@@ -814,8 +867,6 @@ The new line here must be kept as the second half of the string is clickable for
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Passa direttamente al link nella nuova scheda</string>
 
-    <!-- Preference for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
-    <string moz:removedIn="97" name="preference_category_safe_browsing">Safe Browsing</string>
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Blocca siti potenzialmente pericolosi e ingannevoli</string>
     <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
@@ -825,8 +876,6 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="preference_https_only_title">Modalità solo HTTPS</string>
 
     <!-- Description of the preference to enable "HTTPS-Only" mode. -->
-    <string moz:removedIn="98" name="preference_https_only_summary2" tools:ignore="UnusedResources">Tenta automaticamente di connettersi ai siti web utilizzando HTTPS per una maggiore sicurezza. Le connessioni HTTPS forniscono una connessione sicura e crittata con i siti visitati.</string>
-
     <string name="preference_https_only_summary3">Tenta automaticamente la connessione ai siti utilizzando il protocollo di crittografia HTTPS per una maggiore sicurezza.</string>
 
     <!-- Preference for exceptions tracking protection -->
@@ -927,7 +976,8 @@ The new line here must be kept as the second half of the string is clickable for
 
     <!-- Contextual Feature Recommendation Popups -->
     <!-- CFR for Toolbar Shield Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_shield_icon">Sembra che questo sito stesse cercando di tracciarti. Tocca l’icona dello scudo per visualizzare le impostazioni per il sito e le statistiche di blocco degli elementi traccianti.</string>
+    <string name="cfr_for_toolbar_shield_icon2">Preso! Abbiamo impedito a questo sito di spiarti. Tocca lo scudo in qualsiasi momento per vedere che cosa viene bloccato.</string>
+
     <!-- Content description (not visible, for screen readers etc.): Button that closes the CFR popup -->
     <string name="cfr_close_button_description">Chiudi pop-up</string>
 
@@ -941,6 +991,35 @@ The new line here must be kept as the second half of the string is clickable for
     <string name="tool_tip_dismiss_button_content_description">Chiudi</string>
 
     <!-- CFR for Toolbar Delete Icon (Banner Info Message) -->
-    <string name="cfr_for_toolbar_delete_icon">Elimina i tuoi dati personali, la cronologia di navigazione e molto altro da questa sessione toccando il pulsante del cestino. Prova!</string>
+    <string name="cfr_for_toolbar_delete_icon2">Tocca qui per eliminare tutti i dati — cronologia, cookie, tutto! — e ricominciare da capo con una nuova scheda.</string>
 
+    <!-- Promote SearchWidget Dialog -->
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_content_description">Chiudi</string>
+
+    !-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_picture_content_description">Widget di ricerca</string>
+
+    !-- This is the title of promote search widget dialog. --&gt;
+    <string name="promote_search_widget_dialog_title">Cronologia di navigazione eliminata 🎉</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <!-- Banner Info Message than will appear when user first enters in the app. The location is at the toolbar. -->
+    <string name="cfr_for_start_browsing">Inizia la tua sessione di navigazione anonima. Nel frattempo, noi rimuoveremo elementi traccianti e altre minacce.</string>
+
+    !-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. &quot;Focus&quot;) --&gt;
+    <string name="promote_search_widget_dialog_subtitle">Ti lasciamo alla tua navigazione privata, ma la prossima volta ricorda che puoi iniziare più rapidamente utilizzando il widget di %1$s nella schermata principale.</string>
+
+    !-- This is te text from add search widget to home screen button .The button is located on
+    promote search widget dialog. --&gt;
+    <string name="promote_search_widget_button_text">Aggiungi widget alla schermata principale</string>
+
+    !-- This is te text of the snackbar that appears after the search widget was added successfully
+    to the home screen. --&gt;
+    <string name="promote_search_widget_snackbar_message">Widget aggiunto alla schermata principale</string>
 </resources>
